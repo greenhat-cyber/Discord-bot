@@ -66,7 +66,7 @@ client.on("guildMemberAdd", async (member) => {
       "welcome-image.png"
     );
     channel.send(
-      `Hey ${member}, welcome to ${member.guild.name}! Use <#${process.env.WELCOME_CHANNEL_ID}> For interacting with the others.`,
+      `Hey ${member}, welcome to ${member.guild.name}! Use <#${process.env.GENERAL_VC_ID}> For interacting with the others.`,
       attachment
     );
   });
