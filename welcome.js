@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const { createCanvas, loadImage } = require("canvas");
-
 module.exports = (client) => {
   const channelId = "1102857584614060084";
   const rulesChannel = "1102298407973953636";

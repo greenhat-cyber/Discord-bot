@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-
+require("dotenv").config();
 const config = require("./config.json");
 const welcome = require("./welcome");
 
@@ -10,4 +10,4 @@ client.on("ready", () => {
   welcome(client);
 });
 
-client.login(config.token);
+client.login(process.env.TOKEN);
